@@ -11,9 +11,8 @@ $db = new DB();
 
 $meds = Meter::all();
 
-
 foreach ($meds as $med) {
 
-    echo "SERIAL NO: ". $med->serial_number . " DESCRIPTION: " . $med->description . PHP_EOL;
+    echo "SERIAL NO: " . $med->serial_number . " DESCRIPTION: " . $med->description . PHP_EOL;
 
 }

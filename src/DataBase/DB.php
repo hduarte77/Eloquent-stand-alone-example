@@ -3,10 +3,12 @@ namespace App\DataBase;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-class DB {
+class DB
+{
 
     private $capsule;
-    public function __construct(){
+    public function __construct()
+    {
 
         require_once(__DIR__ . "../../Config/Config.php");
 
@@ -23,9 +25,8 @@ class DB {
 
         $this->capsule->setAsGlobal();
         $this->capsule->bootEloquent();
-        
+
     }
 
 
 }
-

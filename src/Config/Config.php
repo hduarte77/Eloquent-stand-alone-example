@@ -15,6 +15,3 @@ $db_username = "USERNAME";
 $db_password = "PASSWORD";
 
 $db_charset = "utf8";
-
-
-

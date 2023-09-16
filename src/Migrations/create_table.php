@@ -11,7 +11,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 $db = new DB();
 
-try{
+try {
 
     Capsule::schema()->create('meters', function ($table) {
         $table->increments('id');
@@ -20,6 +20,6 @@ try{
         $table->timestamps();
     });
 
-}catch(QueryException $e){
+} catch (QueryException $e) {
     echo $e->getMessage();
 }
